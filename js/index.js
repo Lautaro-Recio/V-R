@@ -1,12 +1,12 @@
 
 const staff = [
-    {name:"Valeria Venturini",img:"../assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    {name:"Pedro Pepe",img:"../assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Valeria Venturini",img:"./assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Pedro Pepe",img:"./assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
     
 ]
 const staff2 = [
-    {name:"Pepa Prez",img:"../assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    {name:"Juan garica",img:"../assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Pepa Prez",img:"./assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Juan garica",img:"./assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
 ]
 function graficar(array,box){
 
@@ -20,7 +20,7 @@ function graficar(array,box){
                 <p>      
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?
                 </p>
-                </div>
+            </div>
                 <img  src="${perfil.img}" alt="${perfil.name}" class="prods">
                 `;
                 box.appendChild(div);
@@ -37,12 +37,12 @@ graficar(staff2,box2)
 
 
 const carousel = [
-    {name:"Juan garica",img:["../assets/imgs/ProyectosR+v.png","../assets/imgs/perfil.jpg","../assets/imgs/ProyectosR+v.png"]},
-    {name:"Pepa Prez",img:["../assets/imgs/perfil.jpg","../assets/imgs/ProyectosR+v.png",]},
-    {name:"Juan ",img:["../assets/imgs/ProyectosR+v.png","../assets/imgs/perfil.jpg"],},
-    {name:" garica",img:["../assets/imgs/ProyectosR+v.png","../assets/imgs/perfil.jpg"],},
-    {name:"Pepe garica",img:["../assets/imgs/ProyectosR+v.png","../assets/imgs/perfil.jpg"],},
-    {name:"milagors recio",img:["../assets/imgs/ProyectosR+v.png","../assets/imgs/perfil.jpg"],},
+    {name:"Juan garica",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg","./assets/imgs/ProyectosR+v.png"]},
+    {name:"Pepa Prez",img:["./assets/imgs/perfil.jpg","./assets/imgs/ProyectosR+v.png",]},
+    {name:"Juan ",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
+    {name:" garica",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
+    {name:"Pepe garica",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
+    {name:"milagors recio",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
 
 ]
 
@@ -120,9 +120,9 @@ carrousel()
 /* Servicios */
 
 const services = [
-    {name:"Llave en Mano",img:"../assets/imgs/llaveEnMano.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    {name:"Proyectos y conduccion tecnica",img:"../assets/imgs/conduccion.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    {name:"Diseño de interiores y locales comerciales",img:"../assets/imgs/diseñoInterior.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Llave en Mano",img:"./assets/imgs/llaveEnMano.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Proyectos y conduccion tecnica",img:"./assets/imgs/conduccion.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Diseño de interiores y locales comerciales",img:"./assets/imgs/diseñoInterior.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
 ]
 
 const serviceContainer = document.getElementById("servicios")
@@ -162,7 +162,7 @@ function contactFunction(){
         div.setAttribute("class", "contactCards");
         div.innerHTML = 
                 `   
-                <img src="../assets/imgs/perfil.jpg" alt="imgTelefono">
+                <img src="./assets/imgs/perfil.jpg" alt="imgTelefono">
                 <div>
                     <h5>${num.name}</h5>
                     <p>${num.num}</p>
