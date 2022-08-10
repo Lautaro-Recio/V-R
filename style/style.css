@@ -1,12 +1,13 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-color: #e3e3e3;
 }
 .padd{
     padding: 1% 5%;
 }
 .navbar{
-    background-color:#ffffff;
+    background-color:#e3e3e3;
     border-bottom: 1px solid #6e11f4 ;
 }
 .navbar h1{
@@ -82,14 +83,14 @@ body{
 }
 .carousel{
     padding: 10%;
-    background-color: #cacaca;
-
+    
 }
 .carousel h5{
     text-align: center;
     margin-bottom: 15px;
     font-size: 25px;
 }
+
 
 /* Servicios */
 
@@ -116,7 +117,18 @@ body{
 .servicesCards img{
     height: 100px;
     width: 100px;
-    border-radius: 100%;
+    padding: 10px;
+}
+
+.servicesCards button{
+   width: 40%;
+   height: 6%;
+   border-radius: 15px;
+   font-weight: 500;
+}
+.servicesCards button:hover{
+    background-color: #6e11f4;
+    color: white;
 }
 
 
@@ -140,7 +152,7 @@ body{
 }
 
 .info p{
-   padding: 10% 20%;
+   padding: 10%;
 }
 
 .contact{
@@ -168,9 +180,11 @@ footer div{
     margin: 1% 3%;
 }
 footer img{
-    height:50px;
-    width: 50px;
+    height:40px;
+    width: 40px;
 }
 footer h5{
     margin: 5% 3%;
 }
+
+
