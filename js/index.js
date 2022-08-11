@@ -1,12 +1,13 @@
 
 const staff = [
-    {name:"Valeria Venturini",img:"./assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    {name:"Pedro Pepe",img:"./assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    
+    {name:"Valeria Venturini",img:"./assets/imgs/perfil.jpg",parraf:"Arquitecta recibida en el año 2009, en la universidad nacional de Cordoba", puesto:"<b>Socia fundadora</b>, encargada del área proyectos, administración y obras"},
+    {name:"Luciana Roggio",img:"./assets/imgs/perfil.jpg",parraf:"Arquitecta recibida en el año 2009, en la universidad nacional de Cordoba", puesto:"<b>Socia fundadora</b>, encargada del área proyectos y obras"},
+    {name:"Guadalupe Guyon",img:"./assets/imgs/perfil.jpg",parraf:"Estudiante de arquitectura en la Universidad Nacional de Córdoba", puesto:"Colaboradora en armado de piezas gráficas y legajos"},
+
 ]
 const staff2 = [
-    {name:"Pepa Prez",img:"./assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    {name:"Juan garica",img:"./assets/imgs/perfil.jpg",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Guillermo Sangoy",img:"./assets/imgs/perfil.jpg",parraf:"Ingeniero Civil recibido en el año 2013, en la Universidad Tecnológica Nacional - Facultad Regional Córdoba",puesto:"<b>Socio</b>, Encargado del área técnica y obras"},
+    {name:"Milagros del Zopo",img:"./assets/imgs/perfil.jpg",parraf:"Arquitecta recibida en el año 2020 en la Universidad Nacional de Córdoba",puesto:"Encargada del área comercial e interiorismo"},
 ]
 function graficar(array,box){
 
@@ -17,9 +18,9 @@ function graficar(array,box){
     div.innerHTML = `
             <div>
                 <h5>${perfil.name}</h5>
-                <p>      
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?
-                </p>
+                <p>${perfil.parraf}</p>
+                <p>${perfil.puesto}</p>
+
             </div>
                 <img  src="${perfil.img}" alt="${perfil.name}" class="prods">
                 `;
@@ -120,24 +121,30 @@ carrousel()
 /* Servicios */
 
 const services = [
-    {name:"Llave en Mano",img:"./assets/imgs/llaveEnMano.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    {name:"Proyectos y conduccion tecnica",img:"./assets/imgs/conduccion.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
-    {name:"Diseño de interiores y locales comerciales",img:"./assets/imgs/diseñoInterior.png",parraf:"Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut, velit dicta! Officia labore commodi voluptates perferendis!Earum, dolorum labore iste harum odio placeat, ullam asperiores facilis animi consequuntur laborum laboriosam?"},
+    {name:"Llave en Mano",img:"./assets/imgs/llaveEnMano.png",parraf:"Nos encargamos de todo, entregamos la obra lista para habitar. Nos diferenciamos de las grandes constructoras haciendo personalizado cada proyecto, acompañamos al cliente en la elección de todos los detalles estéticos. Este sistema es ideal para aquellos clientes que no tienen tiempo de encargarse de lo que implica una obra o simplemente no quieren afrontar el trabajo que eso implica, nada mejor que pensar solo en el día de la mudanza y disfrutar del nuevo hogar."},
+    {name:"Proyectos",img:"./assets/imgs/conduccion.png",parraf:"Diseñamos cada espacio según necesidades, gustos y forma de habitar de cada cliente en particular, adecuado a su economía y condicionados por el terreno, su forma,  su ubicación y orientaciones."},
+    {name:"Conducción tecnica",img:"./assets/imgs/conduccionTecnica.png",parraf:"Acompañamos la ejecución de la obra controlando la fiel interpretación de los planos, para lograr el proyecto diseñado."},
+    {name:"Arquitectura Comercial",img:"./assets/imgs/comercial.png",parraf:"Diseñamos fachadas e interiores comerciales haciendo un análisis complejo sobre el rubro de cada actividad, logrando una imagen que aumente las ventas y aportando diseño al área comercial de cada ciudad. "},
+    {name:"Relevamientos",img:"./assets/imgs/documentos.png",parraf:"Medimos y realizamos la documentación de construcciones que no tuviesen planos aprobados y sean requeridos para presentar ante el municipio requerido para regularizar dicha situación."},
+    {name:"Diseño de interiores",img:"./assets/imgs/diseñoInterior.png",parraf:"Diseñamos cada interior de la casa según gustos y formas de habitar de cada cliente, sabemos que la casa es el lugar donde más tiempo pasamos y no hay nada mejor que habitarla y estar cómodo y a gusto en ella."},
+
 ]
 
-const serviceContainer = document.getElementById("servicios")
+const serviceContainer = document.getElementById("slides")
 
 function servicios(){ 
     for (const serv of services)
     {    
         let div = document.createElement("div");
-        div.setAttribute("class", "servicesCards");
+        div.setAttribute("class", "swiper-slide");
         div.innerHTML = 
                 `
+                <div class="servicesCards">
                     <h5>${serv.name}</h5>
                     <img src="${serv.img}" alt="${serv.name}">
                     <p>${serv.parraf}</p>
                     <button>Consultar</button>
+                </div>
                 `;
         serviceContainer.appendChild(div)
     }
@@ -148,10 +155,9 @@ servicios()
 /* Contacto */
 
 const Contact = [
-    {name:"Valeria Venturini",num:35133513551351,},
-    {name:"Pepe pombo",num:35133513551351,},
-    {name:"Juan pedro",num:35133513551351,},
-    {name:"Pedro Juan",num:35133513551351,},
+    {name:"Valeria Venturini",num: 3525643165,mail:"valeriaventuriniarq@gmail.com"},
+    {name:"Luciana Roggio",num:3525413084,mail: "lucianaroggioarq@gmail.com "},
+
 ]
 const ContactContainer = document.getElementById("contact")
 
@@ -162,13 +168,82 @@ function contactFunction(){
         div.setAttribute("class", "contactCards");
         div.innerHTML = 
                 `   
-                <img src="./assets/imgs/perfil.jpg" alt="imgTelefono">
+                <h5>${num.name}</h5>
                 <div>
-                    <h5>${num.name}</h5>
+                    <img src="./assets/imgs/celular.png" alt="tell">
                     <p>${num.num}</p>
                 </div>
+                <div>
+
+                    <img src="./assets/imgs/mail.png" alt="mail">
+                    <p>${num.mail}</p>
+                </div>
+                <hr>
                 `;
                 ContactContainer.appendChild(div)
     }
 }
 contactFunction()
+
+
+/* Swipper */
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+
+        800: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        },
+
+        960: {
+            slidesPerView: 3,
+            spaceBetween: 80
+        },
+
+        1120: {
+            slidesPerView: 3,
+            spaceBetween: 120
+        },
+
+        1440: {
+            spaceBetween: 170,
+            slidesPerView: 3,
+        }
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });

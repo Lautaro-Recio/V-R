@@ -9,17 +9,26 @@ body{
 .navbar{
     background-color:#e3e3e3;
     border-bottom: 1px solid #6e11f4 ;
+    justify-content: space-around;
 }
-.navbar h1{
+.logo{
     margin-left: 5%;
+    margin-right: 30%;
+}
+
+.navbar h5{
+    text-align: -webkit-center;
 }
 
 .contacto{
     display: flex;
 }
+.collapse{
+    width: 40%
 
+}
 .ms-auto{
-    margin-right: 10%;
+    margin-right: 7%;
     font-size: 18px;
     font-weight: 600;
 };
@@ -44,27 +53,29 @@ body{
 
 .boxes{
     display: flex;
-    margin: 2%;
+    margin: 1% 0%;
+    justify-content: space-around;
 }
 
-.box{
-    display: flex;
-}
 .box{
     display: flex;
     border: 2px white solid;
     height: 200px;
+    width: 100%;
     background-color:rgb(255, 255, 255);
     border: 1px solid #6e11f4 ; 
+    margin: 5%;
 
-
+}
+.box div{
+    width: 125%;
 }
 .box p, .box h5{
     padding: 2%;
 
 }
 .boxes img{
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 .box2{
@@ -99,19 +110,33 @@ body{
     margin: 2%;
 
 }
-
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 1% 5% 5% 5% !important;
+}
 .servicesCards{
     display: block;
     justify-content: center;
     text-align: center;
-    border: #6e11f4 1px solid;
-    margin: 1% 4% ;
+    border: #6e11f4 3px solid;
+    border-radius: 5%;
+    margin: 1%  ;
+    width: 100%;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #6e11f4 !important;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #6e11f4 !important;
 }
 .servicesCards h5, .servicesCards img, .servicesCards p, .servicesCards button{
     margin: 5% 0%;
 }
 .servicesCards p{
     padding: 0% 15%;
+    height:350px ;
 }
 
 .servicesCards img{
@@ -160,7 +185,7 @@ body{
     width: 30%;
 }
 
-.contactCards{
+.contactCards div{
     display: flex;
 }
 .contactCards img{
@@ -202,9 +227,10 @@ footer h5{
         padding-right: 5px;
     }
     .ms-auto{
-        margin-right: 00% !important;
+        margin-right: 0% !important;
     };
 
+   
     /* Quienes somos */
 
     /* quienesSomos  */
@@ -221,12 +247,14 @@ footer h5{
     }
 
     .boxes img{
-        width: 50% !important;
-        height: 50% !important;
-        
+        width: 40% !important;
+        height: 90% !important;
+        padding: 5%;
     }
     .box{
-        margin-top: 2%;
+        margin: 2% 0%;
+        font-size: 15px;
+
     }
 
     /* Proyectos */
@@ -251,9 +279,18 @@ footer h5{
         justify-content: center;
         text-align: center;
         border: #6e11f4 1px solid;
-        margin: 1% 4% ;
     }
-   
+    .servicesCards button{
+        width: 50% !important;
+    }
+    .swiper-slide{
+        padding: 0% 6%;
+        margin-right: 7% !important;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 0px !important;
+        right: auto;
+    }
     .servicesCards p{
         padding: 0% 10%;
     }
@@ -274,5 +311,14 @@ footer h5{
         background-color: #6e11f4;
         color: white;
     }
+    .logo{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+    .navbar h5{
+        width: 50%;
+        margin-top: 2%;
+    }
     
+
 }   
