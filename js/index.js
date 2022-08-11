@@ -38,12 +38,12 @@ graficar(staff2,box2)
 
 
 const carousel = [
-    {name:"Juan garica",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg","./assets/imgs/ProyectosR+v.png"]},
-    {name:"Pepa Prez",img:["./assets/imgs/perfil.jpg","./assets/imgs/ProyectosR+v.png",]},
-    {name:"Juan ",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
-    {name:" garica",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
-    {name:"Pepe garica",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
-    {name:"milagors recio",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
+    {name:"Diego Suarez",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg","./assets/imgs/ProyectosR+v.png"]},
+    {name:"Pepa Perez",img:["./assets/imgs/perfil.jpg","./assets/imgs/ProyectosR+v.png",]},
+    {name:"Juan valdez",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
+    {name:"Marcela Garcia",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
+    {name:"Pepe Suarez",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
+    {name:"Pedro garcia",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
 
 ]
 
