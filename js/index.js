@@ -55,7 +55,7 @@ const carouselContainer = ()=>{
     for (let i = 0; i < 6; i++)
     {   
         let div = document.createElement("div");
-        div.setAttribute("class", "carousel slide");
+        div.setAttribute("class", "carousel carouselCasas slide");
         div.setAttribute("id", `carouselExampleIndicators${i+1}`);
         div.setAttribute("data-bs-ride", "true");
 
