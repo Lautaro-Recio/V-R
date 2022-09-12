@@ -111,7 +111,7 @@ function servicios(){
                 `
                 <div class="servicesCards">
                     <h5>${serv.name}</h5>
-                    <img src="${serv.img}" alt="${serv.name}">
+                    <img loading="lazy" src="${serv.img}" alt="${serv.name}">
                     <p>${serv.parraf}</p>
                 </div>
                 `;
@@ -139,12 +139,12 @@ function contactFunction(){
                 `   
                 <h5>${num.name}</h5>
                 <div>
-                    <img src="./assets/imgs/celular.png" alt="tell">
+                    <img loading="lazy" src="./assets/imgs/celular.png" alt="tell">
                     <p>${num.num}</p>
                 </div>
                 <div>
 
-                    <img src="./assets/imgs/mail.png" alt="mail">
+                    <img loading="lazy" src="./assets/imgs/mail.png" alt="mail">
                     <p>${num.mail}</p>
                 </div>
                 <hr>
