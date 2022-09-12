@@ -1,49 +1,17 @@
 
-const staff = [
-    {name:"Valeria Venturini",img:"./assets/imgs/perfil.jpg",parraf:"Arquitecta recibida en el año 2009, en la universidad nacional de Cordoba", puesto:"<b>Socia fundadora</b>, encargada del área proyectos, administración y obras"},
-    {name:"Luciana Roggio",img:"./assets/imgs/perfil.jpg",parraf:"Arquitecta recibida en el año 2009, en la universidad nacional de Cordoba", puesto:"<b>Socia fundadora</b>, encargada del área proyectos y obras"},
-    {name:"Guadalupe Guyon",img:"./assets/imgs/perfil.jpg",parraf:"Estudiante de arquitectura en la Universidad Nacional de Córdoba", puesto:"Colaboradora en armado de piezas gráficas y legajos"},
-
-]
-const staff2 = [
-    {name:"Guillermo Sangoy",img:"./assets/imgs/perfil.jpg",parraf:"Ingeniero Civil recibido en el año 2013, en la Universidad Tecnológica Nacional - Facultad Regional Córdoba",puesto:"<b>Socio</b>, Encargado del área técnica y obras"},
-    {name:"Milagros del Zopo",img:"./assets/imgs/perfil.jpg",parraf:"Arquitecta recibida en el año 2020 en la Universidad Nacional de Córdoba",puesto:"Encargada del área comercial e interiorismo"},
-]
-function graficar(array,box){
-
-    for (const perfil of array){
-        let div = document.createElement("div");
-        div.setAttribute("class", "col-md-12 col-xs-5 box");
-    div.setAttribute("id", "cajas");
-    div.innerHTML = `
-            <div>
-                <h5>${perfil.name}</h5>
-                <p>${perfil.parraf}</p>
-                <p>${perfil.puesto}</p>
-
-            </div>
-                <img  src="${perfil.img}" alt="${perfil.name}" class="prods">
-                `;
-                box.appendChild(div);
-            }
-}
-
-const box1 = document.getElementById("box1")
-const box2 = document.getElementById("box2")
-
-graficar(staff,box1)
-graficar(staff2,box2)
-
 
 
 
 const carousel = [
-    {name:"Diego Suarez",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg","./assets/imgs/ProyectosR+v.png"]},
-    {name:"Pepa Perez",img:["./assets/imgs/perfil.jpg","./assets/imgs/ProyectosR+v.png",]},
-    {name:"Juan valdez",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
-    {name:"Marcela Garcia",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
-    {name:"Pepe Suarez",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
-    {name:"Pedro garcia",img:["./assets/imgs/ProyectosR+v.png","./assets/imgs/perfil.jpg"],},
+    {name:"Proyecto y conducción tecnica",img:["./assets/imgs/casa1/g-m1.jpg","./assets/imgs/casa1/g-m2.jpg","./assets/imgs/casa1/g-m3.jpg","./assets/imgs/casa1/g-m4.jpg","./assets/imgs/casa1/g-m5.jpg"]},
+
+    {name:"Llave en mano",img:["./assets/imgs/casa2/m-p1.jpg","./assets/imgs/casa2/m-p2.jpg","./assets/imgs/casa2/m-p4.jpg","./assets/imgs/casa2/m-p5.jpg","./assets/imgs/casa2/m-p5.jpg"]},
+
+    {name:"Local comercial",img:["./assets/imgs/local1/local.jpg","./assets/imgs/local1/local1.jpg","./assets/imgs/local1/local2.jpg","./assets/imgs/local1/local3.jpg","./assets/imgs/local1/local4.jpg"],},
+
+    {name:"Proyecto y conducción tecnica",img:["./assets/imgs/casa3/casa1.jpg","./assets/imgs/casa3/casa2.jpg","./assets/imgs/casa3/casa3.jpg","./assets/imgs/casa3/casa4.jpg","./assets/imgs/casa3/casa5.jpg"]},
+
+   
 
 ]
 
@@ -52,7 +20,7 @@ const proyectos = document.getElementById("proyectos")
 const carouselContainer = ()=>{
 
     
-    for (let i = 0; i < 6; i++)
+    for (let i = 0; i < 4; i++)
     {   
         let div = document.createElement("div");
         div.setAttribute("class", "carousel carouselCasas slide");
@@ -65,6 +33,8 @@ const carouselContainer = ()=>{
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner" id="carousel${i+1}">
 
@@ -121,7 +91,7 @@ carrousel()
 /* Servicios */
 
 const services = [
-    {name:"Llave en Mano",img:"./assets/imgs/llaveEnMano.png",parraf:"Nos encargamos de todo, entregamos la obra lista para habitar. Nos diferenciamos de las grandes constructoras haciendo personalizado cada proyecto, acompañamos al cliente en la elección de todos los detalles estéticos. Este sistema es ideal para aquellos clientes que no tienen tiempo de encargarse de lo que implica una obra o simplemente no quieren afrontar el trabajo que eso implica, nada mejor que pensar solo en el día de la mudanza y disfrutar del nuevo hogar."},
+    {name:"Llave en Mano",img:"./assets/imgs/llaveEnMano.png",parraf:"Nos diferenciamos de las grandes constructoras haciendo personalizado cada proyecto, acompañamos al cliente en la elección de todos los detalles estéticos. Este sistema es ideal para aquellos clientes que solo piensan en el día de la mudanza y disfrutar del nuevo hogar."},
     {name:"Proyectos",img:"./assets/imgs/conduccion.png",parraf:"Diseñamos cada espacio según necesidades, gustos y forma de habitar de cada cliente en particular, adecuado a su economía y condicionados por el terreno, su forma,  su ubicación y orientaciones."},
     {name:"Conducción tecnica",img:"./assets/imgs/conduccionTecnica.png",parraf:"Acompañamos la ejecución de la obra controlando la fiel interpretación de los planos, para lograr el proyecto diseñado."},
     {name:"Arquitectura Comercial",img:"./assets/imgs/comercial.png",parraf:"Diseñamos fachadas e interiores comerciales haciendo un análisis complejo sobre el rubro de cada actividad, logrando una imagen que aumente las ventas y aportando diseño al área comercial de cada ciudad. "},
@@ -143,7 +113,6 @@ function servicios(){
                     <h5>${serv.name}</h5>
                     <img src="${serv.img}" alt="${serv.name}">
                     <p>${serv.parraf}</p>
-                    <button>Consultar</button>
                 </div>
                 `;
         serviceContainer.appendChild(div)

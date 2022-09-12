@@ -1,28 +1,36 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-color: #e3e3e3;
+    background-color: #f7f7f7;
 }
 .padd{
     padding: 1% 5%;
 }
 .navbar{
-    background-color:#e3e3e3;
+    background-color:#f7f7f7;
     border-bottom: 1px solid #6e11f4 ;
     justify-content: space-around;
     position: fixed;
     width: 100%;
     z-index: 9999999;
 }
-.collapse{
-    margin-right: 7%;
+.nav-link{
+    border-left:0px !important;
+    border-right:3px solid #6e11f4 ;
+    padding-right: 5px;
+    font-size: 16px;
 }
+.home{
+    width: 25%;
+}
+
 .navQuienes{
     width: 170px;
 }
 .logo{
     margin-left: 5%;
-    margin-right: 30%;
+    margin-right: 0%;
+    width: 25%;
 }
 .carousel-caption {
     right: 15%;
@@ -30,7 +38,7 @@ body{
     left: 5%;
 }
 .h4Carrousel{
-    color: #e3e3e3 ;
+    color: #f7f7f7;
     font-size: 100px ;
     text-align: initial ;
     font-weight: bolder;
@@ -40,8 +48,8 @@ body{
     display: flex;
 }
 .collapse{
-    width: 40%
-
+    width: 40%;
+    margin-right: 3%;
 }
 .ms-auto{
     margin-right: 7%;
@@ -56,16 +64,21 @@ body{
     border-left:3px solid #6e11f4;
     color: #6e11f4
 }
+.carouselCasas .carousel-indicators{
+    background-color: #7011f485;
+}
 
-
-.carousel-dark .carousel-indicators{
-    margin: -3%;
+.carouselCasas  .carousel-item img{
+    height: 250px;
+    padding: 1%;
 }
 
 
 
-.carousel-dark .carousel-control-prev-icon,.carousel-dark .carousel-control-next-icon{
+.carousel-control-prev-icon, .carousel-control-next-icon{
     background-color: #6e11f4 !important;
+    right: -10px;
+    left: -10px;
 }
 /* quienesSomos  */
 .quienesSomos{
@@ -74,13 +87,6 @@ body{
 
 }
 
-
-.box1{
-    width: 50%;
-}
-.box2{
-    width: 50%;
-}
 .boxes{
     display: flex;
     margin: 1% 0%;
@@ -119,8 +125,9 @@ body{
 
 .proyectos{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
+
     margin: 2%;
 
 }
@@ -131,7 +138,7 @@ body{
 .carousel h5{
     text-align: center;
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 21px;
 }
 
 
@@ -152,7 +159,7 @@ body{
     justify-content: center;
     text-align: center;
     border: #6e11f4 3px solid;
-    border-radius: 5%;
+    border-radius: 25px;
     margin: 1%  ;
     width: 100%;
 }
@@ -167,18 +174,19 @@ body{
     margin: 5% 0%;
 }
 .servicesCards p{
-    padding: 0% 15%;
+    padding: 0% 12%;
     height:350px ;
+    font-size: 15px;
 }
 
 .servicesCards img{
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     padding: 10px;
 }
 
 .servicesCards button{
-   width: 40%;
+   width: 50%;
    height: 6%;
    border-radius: 15px;
    font-weight: 500;
@@ -196,8 +204,10 @@ body{
 
 }
 .info{
-    display: flex;
     width: 70%;
+    background-image: url("../assets/imgs/local.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .info div{
     width: 50%;
@@ -209,7 +219,13 @@ body{
 }
 
 .info p{
-   padding: 10%;
+    margin: 5%;
+    padding: 1%;
+    font-size: 21px;
+    font-weight: 500;
+    background-color: #bbbbbb77;
+    width: 40%;
+
 }
 
 .contact{
@@ -253,16 +269,20 @@ footer h5{
 @media only screen and (max-width:577px)
 {
     /* nav */
-    .nav-link{
-        border-left:0px !important;
-        border-right:3px solid #6e11f4 ;
-        padding-right: 5px;
+    .navQuienes{
+        width: auto;
     }
+    
     .ms-auto{
-        margin-right: 0% !important;
+        margin-right: 2% !important;
     };
 
-   
+    .collapse{
+        margin-right: 0% !important;
+    }
+    .home{
+        width: 50%;
+    }
     /* Quienes somos */
 
     /* quienesSomos  */
@@ -288,6 +308,9 @@ footer h5{
         font-size: 15px;
 
     }
+    .h4Carrousel{
+        display: none;
+    }
 
     /* Proyectos */
 
@@ -311,6 +334,7 @@ footer h5{
         justify-content: center;
         text-align: center;
         border: #6e11f4 1px solid;
+
     }
     .servicesCards button{
         width: 50% !important;
@@ -323,13 +347,15 @@ footer h5{
         left: 0px !important;
         right: auto;
     }
+   
     .servicesCards p{
-        padding: 0% 10%;
+        padding: 0% 5%;
+        height:180px ;
+        font-size: 15px;
     }
-
     .servicesCards img{
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
         padding: 10px;
     }
 
@@ -346,33 +372,39 @@ footer h5{
     .logo{
         margin-left: 0% !important;
         margin-right: 0% !important;
+        width: 15%;
+    }
+    .navbar{
+        background-color:#f7f7f7;
+        border-bottom: 1px solid #6e11f4 ;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        z-index: 9999999;
     }
     .navbar h5{
         width: 50%;
         margin-top: 2%;
     }
-    /* Contacto */
     .contacto{
-        display: block;
+        display: block !important;
         margin: 2%;
 
     }
     .info{
         display: block;
         width: 100%;
-    }
-    .info div{
-        width: 100%;
-        display: block;
-    }
-    .info img{
-        margin: 2% 0%;
-        width: 100%;
+        background-size: cover;
 
     }
+    
+   
 
     .info p{
-        padding: 5%;
+        padding: 6%;
+        width: 100%;
+        height: 300px;
+        background-color:transparent;
     }
 
     .contact{
