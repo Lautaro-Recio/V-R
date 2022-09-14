@@ -5,7 +5,7 @@
 const carousel = [
     {name:"Proyecto y conducción tecnica",img:["./assets/imgs/casa1/g-m1.jpg","./assets/imgs/casa1/g-m2.jpg","./assets/imgs/casa1/g-m3.jpg","./assets/imgs/casa1/g-m4.jpg","./assets/imgs/casa1/g-m5.jpg"]},
 
-    {name:"Llave en mano",img:["./assets/imgs/casa2/m-p1.jpg","./assets/imgs/casa2/m-p2.jpg","./assets/imgs/casa2/m-p4.jpg","./assets/imgs/casa2/m-p5.jpg","./assets/imgs/casa2/m-p5.jpg"]},
+    {name:"Llave en mano",img:["./assets/imgs/casa2/m-p1.jpg","./assets/imgs/casa2/m-p2.jpg","./assets/imgs/casa2/m-p3.jpg","./assets/imgs/casa2/m-p4.jpg","./assets/imgs/casa2/m-p5.jpg"]},
 
     {name:"Local comercial",img:["./assets/imgs/local1/local.jpg","./assets/imgs/local1/local1.jpg","./assets/imgs/local1/local2.jpg","./assets/imgs/local1/local3.jpg","./assets/imgs/local1/local4.jpg"],},
 
